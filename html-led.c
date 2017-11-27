@@ -1,8 +1,8 @@
 #include <wiringPi.h>
 
-#define RED 0;
-#define GREEN 1;
-#define BLUE 2;
+const int RED = 0;
+const int GREEN = 1;
+const int BLUE = 2;
 
 
 int main(void) {
