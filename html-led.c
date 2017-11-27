@@ -1,18 +1,24 @@
 #include <wiringPi.h>
 
+#define RED 0;
+#define GREEN 1;
+#define BLUE 2;
+
+
 int main(void) {
 
 	// Initiate WiringPi
 	wiringPiSetup();
 
 	// Initiate GPIO pins
-	pinMode(0, OUTPUT);
-	pinMode(1, OUTPUT);
-	pinMode(2, OUTPUT);
+	pinMode(RED, OUTPUT);
+	pinMode(GREEN, OUTPUT);
+	pinMode(BLUE, OUTPUT);
 
-	digitalWrite(0, LOW);
-	digitalWrite(1, LOW);
-	digitalWrite(2, HIGH);
+	// Set pins
+	digitalWrite(RED, LOW);
+	digitalWrite(GREEN, LOW);
+	digitalWrite(BLUE, HIGH);
 
 	return 0;
 
