@@ -1,4 +1,5 @@
 #include <wiringPi.h>
+#include <softPwm.h>
 
 const int RED = 0;
 const int GREEN = 1;
@@ -17,8 +18,10 @@ int main(void) {
 
 	// Set pins
 	digitalWrite(RED, LOW);
-	digitalWrite(GREEN, HIGH);
+	digitalWrite(GREEN, LOW);
 	digitalWrite(BLUE, LOW);
+
+	int test = softPwmCreate(RED, 50, 100);
 
 	return 0;
 
