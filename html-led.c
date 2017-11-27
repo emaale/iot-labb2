@@ -17,8 +17,8 @@ int main(void) {
 
 	// Set pins
 	digitalWrite(RED, LOW);
-	digitalWrite(GREEN, LOW);
-	digitalWrite(BLUE, HIGH);
+	digitalWrite(GREEN, HIGH);
+	digitalWrite(BLUE, LOW);
 
 	return 0;
 
